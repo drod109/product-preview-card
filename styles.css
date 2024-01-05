@@ -95,7 +95,7 @@ body {
 .discount-price {
     font-size: 2.5rem;
     font-weight: 700;
-    padding-right: 20px;
+    padding-right: 1.3rem;
     color: var(--pri-clr-dark-cyan);
 }
 .btn {
@@ -111,14 +111,14 @@ body {
     background-color: var(--pri-clr-dark-cyan);
     border-radius: 10px;
     width: 100%;
-    height: 45px;
+    height: 4.5rem;
     text-align: center;
-    padding: 5px;
+    padding: 0.313rem;
     color: var(--ntrl-white);
 }
 .btn img {
     vertical-align: center;
-    padding-right: 5px;
+    padding-right: 0.313rem;
 }
 .btn:hover {
     background-color: var(--ntrl-dark-grayish-blue);
@@ -135,7 +135,7 @@ body {
     color: var(--pri-clr-dark-cyan);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 31.25rem) {
     .card {
         flex-direction: column;
         padding-bottom: 10px;
@@ -147,11 +147,11 @@ body {
     .product-descrption,
     .product-price,
     .btn {
-        padding: 10px;
+        padding: 0.625rem;
     }
 
 }
-@media (max-width: 376px) {
+@media (max-width: 23.438rem) {
     .product-name {
         font-size: 3.5rem;
     }
