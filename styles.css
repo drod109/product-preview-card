@@ -138,14 +138,24 @@ body {
 @media (max-width: 500px) {
     .card {
         flex-direction: column;
+        padding-bottom: 10px;
     }
     .card-img-wrapper {
         flex-direction: column;
+    }
+    .product-name,
+    .product-descrption,
+    .product-price,
+    .btn {
+        padding: 10px;
     }
 
 }
 @media (max-width: 376px) {
     .product-name {
         font-size: 3.5rem;
+    }
+    .author {
+        font-size: 1rem;
     }
 }
