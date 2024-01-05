@@ -30,9 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site Primary URL : [Product Preview Card | Live View](https://drod109.github.io/product-preview-card/)
-- Live Site Backup URL: [Product Preview Card | Live View](https://drod109.github.io/)
+- Live Site Backup URL: [Product Preview Card | Live View](https://codepen.io/drodrigues/full/PoLNPog)
 
 ## My process
 
