@@ -137,7 +137,7 @@ body {
     color: var(--pri-clr-dark-cyan);
 }
 
-@media (max-width: 23.438rem) {
+@media (max-width: 31.25rem) {
     .product-name {
         font-size: 3.5rem;
     }
