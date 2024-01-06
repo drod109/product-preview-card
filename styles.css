@@ -74,22 +74,24 @@ body {
 .product-name {
     font-family: var(--heading-font-family);
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 .product-descrption {
     color: var(--ntrl-dark-grayish-blue);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.4rem;
 }
 .product-price {
-    display: block;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: var(--heading-font-family);
 }
 .original-price {
+    font-weight: 500;
     font-size: 1.5rem;
+    font-family: var(--primary-font-family);
     text-decoration: line-through;
     color: var(--ntrl-dark-grayish-blue);
 }
@@ -100,8 +102,6 @@ body {
     color: var(--pri-clr-dark-cyan);
 }
 .btn {
-    display: flex;
-    align-items: center;
     all: unset;
     box-sizing: border-box;
     outline: revert;
@@ -111,7 +111,7 @@ body {
     font-size: 1.5rem;
     font-weight: 500;
     background-color: var(--pri-clr-dark-cyan);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     width: 100%;
     height: 4.5rem;
     text-align: center;
@@ -146,7 +146,14 @@ body {
     }
     .card {
         flex-direction: column;
-        padding-bottom: 10px;
+        padding-bottom: 1rem;
+    }
+    .btn {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.625rem;
     }
     .card-img-wrapper {
         flex-direction: column;
