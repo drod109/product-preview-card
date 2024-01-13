@@ -22,6 +22,30 @@
     --ntrl-dark-grayish-blue: hsl(228, 12%, 48%);
     --ntrl-white: hsl(0, 0%, 100%);
 
+    /* Font sizes  */
+   --fs-xlg: 3rem;
+   --fs-lg: 2rem;
+   --fs-med: 1.5rem;
+   --fs-reg: 1rem;
+   --fs-sm: 0.625rem;
+
+   /* Font weights */
+   --fw-med: 500;
+   --fw-bold: 700;
+
+   /* Spacings */
+   --spacing-xlg: 3rem;
+   --spacing-lg: 2rem;
+   --spacing-med: 1.5rem;
+   --spacing-sm: 1rem;
+   --spacing-xsm: 0.5rem;
+
+   /* Border radius' */
+   --border-radius-lg: 2rem;
+   --border-radius-med: 1.5rem;
+   --border-radius-sm: 1rem;
+   --border-radius-xsm: 0.625rem;
+
     /* Font Families */
     --heading-font-family: "Fraunces", "system-ui";
     --primary-font-family: "Nontserrat", "system-ui"
@@ -43,7 +67,7 @@ body {
     display: flex;
     background-color: var(--ntrl-white);
     max-width: 65rem;
-    border-radius: 10px;
+    border-radius: var(--border-radius-xsm);
 }
 .card-img-wrapper {
     display: flex;
@@ -53,34 +77,33 @@ body {
 }
 .card-img {
     display: flex;
-    border-radius: 0.7rem 0 0 0.7rem;
-    object-fit: cover;
     width: 100%;
     height: auto;
+    border-top-right-radius: var(--border-radius-xsm);
+    border-top-left-radius: var(--border-radius-xsm);
 }
 .card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1rem 2.5rem;
+    padding: var(--spacing-xsm) var(--spacing-lg);
     flex-shrink: 2;
 }
 .product-category {
     color: var(--ntrl-dark-grayish-blue);
-    font-size: 1.2rem;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
 .product-name {
     font-family: var(--heading-font-family);
-    font-weight: 700;
-    font-size: 3.5rem;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-xlg);
 }
 .product-descrption {
     color: var(--ntrl-dark-grayish-blue);
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 2.4rem;
+    font-weight: var(--fw-med);
+    font-size: var(--fs-med);
+    
 }
 .product-price {
     display: flex;
@@ -89,16 +112,16 @@ body {
     font-family: var(--heading-font-family);
 }
 .original-price {
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-med);
     font-family: var(--primary-font-family);
-    text-decoration: line-through;
     color: var(--ntrl-dark-grayish-blue);
+    text-decoration: line-through;
 }
 .discount-price {
-    font-size: 3rem;
-    font-weight: 700;
-    padding-right: 1.3rem;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-lg);
+    padding-right: var(--spacing-med);
     color: var(--pri-clr-dark-cyan);
 }
 .btn {
@@ -108,10 +131,10 @@ body {
     border: none;
     cursor: pointer;
     font: inherit;
-    font-size: 1.5rem;
+    font-size: var(--fs-med);
     font-weight: 500;
     background-color: var(--pri-clr-dark-cyan);
-    border-radius: 0.625rem;
+    border-radius: var(--border-radius-xsm);
     width: 100%;
     height: 4.5rem;
     text-align: center;
@@ -127,8 +150,6 @@ body {
 }
 .author {
     font: inherit;
-    font-weight: 500;
-    font-size: 1.2rem;
 }
 .author > a {
     color: var(--ntrl-dark-grayish-blu);
@@ -139,14 +160,18 @@ body {
 
 @media (max-width: 31.25rem) {
     .product-name {
-        font-size: 3.5rem;
+        font-size: var(--fs-lg);
+    }
+    .product-descrption {
+        font-size: 1.225rem;
     }
     .author {
-        font-size: 1rem;
+        font-size: 0.855rem;
     }
     .card {
         flex-direction: column;
-        padding-bottom: 1rem;
+        padding-bottom: var(--spacing-sm);
+
     }
     .btn {
         display: flex;
