@@ -175,6 +175,11 @@ body {
         padding-bottom: var(--spacing-sm);
 
     }
+    .card-img {
+        border-top-right-radius: var(--border-radius-xsm);
+        border-bottom-left-radius: var(--border-radius-xsm);
+        border-bottom-left-radius: 0rem;
+    }
     .btn {
         display: flex;
         position: relative;
