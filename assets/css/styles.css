@@ -79,8 +79,8 @@ body {
     display: flex;
     width: 100%;
     height: auto;
-    border-top-right-radius: var(--border-radius-xsm);
     border-top-left-radius: var(--border-radius-xsm);
+    border-bottom-left-radius: var(--border-radius-xsm);
 }
 .card-content {
     display: flex;
@@ -147,6 +147,7 @@ body {
 }
 .btn:hover {
     background-color: var(--ntrl-dark-grayish-blue);
+    transition: background-color .3s ease;
 }
 .author {
     font: inherit;
@@ -156,6 +157,7 @@ body {
 }
 .author > a:hover {
     color: var(--pri-clr-dark-cyan);
+    transition: color .3s ease;
 }
 
 @media (max-width: 31.25rem) {
